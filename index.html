@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MohdArsalan | Personal Portfolio</title>
+    <title>Portfolio | Creative Builder</title>
     <meta name="description"
-        content="Portfolio of MohdArsalan - Creative Developer and Designer. Explore my latest projects and skills.">
+        content="Personal Portfolio - Creative Developer and Designer. Explore latest projects and skills.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,7 +24,8 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Work</a></li>
+            <li><a href="#projects">Fun Corner</a></li>
+            <li><a href="#gaming">Gaming Zone</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -34,13 +35,13 @@
             <div class="profile-area">
                 <div class="profile-container">
                     <div class="rainbow-ring"></div>
-                    <img src="profile.jpg" alt="MohdArsalan" class="profile-img">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
                 </div>
             </div>
-            <h1 class="reveal-text">MohdArsalan</h1>
-            <p class="reveal-text">Creative Builder & Digital Architect</p>
+            <h1 class="reveal-text">Mohd Arsalan</h1>
+            <p class="reveal-text">Digital Architect & Designer</p>
             <div class="hero-btns reveal-text">
-                <a href="#projects" class="btn primary">View Work</a>
+                <a href="#projects" class="btn primary">Fun Corner</a>
                 <a href="#contact" class="btn secondary">Get in Touch</a>
             </div>
         </div>
@@ -136,7 +137,7 @@
 
     <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title">My Work</h2>
+            <h2 class="section-title">Fun Corner ✨</h2>
             <div class="project-grid">
                 <!-- Project 1 -->
                 <div class="project-card glass reveal-text" data-project="cooking">
@@ -187,6 +188,46 @@
         </div>
     </section>
 
+    <section id="gaming" class="gaming-section">
+        <div class="container">
+            <h2 class="section-title">Gaming Zone 🎮</h2>
+            <div class="gaming-grid">
+                <div class="game-card glass reveal-text" data-game="odd-one">
+                    <img src="6c_iGCm9TkeEJDLffsLC-w.jfif" alt="Odd One Out">
+                    <div class="game-overlay"><h3>Odd One Out</h3></div>
+                </div>
+                <div class="game-card glass reveal-text" data-game="find-letters">
+                    <img src="ghost-gaming-mascot-esport-logo-design_188253-1099.jpg" alt="Find The Letters">
+                    <div class="game-overlay"><h3>Find The Letters</h3></div>
+                </div>
+                <div class="game-card glass reveal-text" data-game="clicker">
+                    <img src="kidzsearch9fg-click-click-clicker-ks121714-238756-img.png" alt="Clicker Game">
+                    <div class="game-overlay"><h3>Clicker Game</h3></div>
+                </div>
+                <div class="game-card glass reveal-text" data-game="snake">
+                    <img src="snake-mascot-esport-logo-design-vector.jpg" alt="Snake Master">
+                    <div class="game-overlay"><h3>Snake Master</h3></div>
+                </div>
+                <div class="game-card glass reveal-text" data-game="typing">
+                    <img src="typing-speed-400.webp" alt="Typing Speed Test">
+                    <div class="game-overlay"><h3>Typing Speed Test</h3></div>
+                </div>
+                <div class="game-card glass reveal-text" data-game="follow-path">
+                    <img src="_0009_Screenshot-640x1136-2022-09-20-04.37.08AM.png" alt="Follow The Path">
+                    <div class="game-overlay"><h3>Follow The Path (Not For Mobile)</h3></div>
+                </div>
+                <div class="game-card glass reveal-text" data-game="bomb">
+                    <img src="bomb-explosion-mascot-logo-sport-esport-line-art_160921-608.jpg" alt="Dont Tap The Bomb">
+                    <div class="game-overlay"><h3>Dont Tap The Bomb</h3></div>
+                </div>
+                <div class="game-card glass reveal-text" data-game="tap-beat">
+                    <img src="okiba-tap-game-act-mesa-de-trabajo-1.jpg" alt="Tap The Beat">
+                    <div class="game-overlay"><h3>Tap The Beat</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-card glass">
@@ -194,14 +235,13 @@
                 <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
                 <form id="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" value="MohdArsalan" required>
+                        <input type="text" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" value="mohdarsalanulhaq2@gmail.com" required>
+                        <input type="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required>My Instagram:- arsalanhaque_ , i post my art and edits there so go and check it out.
-My Number:- 6397490925</textarea>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn primary">Send Message</button>
                 </form>
@@ -215,15 +255,29 @@ My Number:- 6397490925</textarea>
             <div id="modal-body">
                 <!-- Content will be injected here -->
             </div>
+            <div id="game-container" style="display:none;">
+                <!-- Game Canvas/HTML will be here -->
+                <div id="game-ui"></div>
+                <div id="mobile-controls" style="display:none;">
+                    <div class="control-pad">
+                        <button class="ctrl-btn up" id="ctrl-up">🔼</button>
+                        <div class="side-btns">
+                            <button class="ctrl-btn left" id="ctrl-left">◀️</button>
+                            <button class="ctrl-btn down" id="ctrl-down">🔽</button>
+                            <button class="ctrl-btn right" id="ctrl-right">▶️</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2026 MohdArsalan. All Rights Reserved.</p>
+        <p>&copy; 2026 All Rights Reserved.</p>
         <div class="social-links">
-            <a href="https://instagram.com/arsalanhaque_" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/916397490925" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://snapchat.com/add/SuzukiXop" target="_blank" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
         </div>
     </footer>
 
